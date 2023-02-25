@@ -1,0 +1,33 @@
+/* header */
+.started-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  background: #1398d6;
+}
+
+@media (max-width: 720px) {
+  .started-bg {
+    height: 202px;
+  }
+}
+@media (max-width: 720px) {
+  #tsparticles {
+    height: 202px !important;
+  }
+}
+
+.started-bg .slide {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+#tsparticles {
+  height: 320px;
+}
