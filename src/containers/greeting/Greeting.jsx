@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import {Fade} from "react-awesome-reveal";
 import emoji from "react-easy-emoji";
 import profile from "../../assets/images/profilepicture.jpg";
 import "./Greeting.scss";

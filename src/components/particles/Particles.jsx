@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import {Fade} from "react-awesome-reveal";
 import Particles from "react-particles";
 import {loadFull} from "tsparticles";
 import {useCallback} from "react";
@@ -126,15 +127,18 @@ function Particless() {
   const particlesInit = useCallback(async engine => {
     await loadFull(engine);
   }, []);
+
   return (
-    <div className="started-bg">
-      <div
-        className="slide"
-        style={{backgroundImage: "url(" + particles + ")"}}
-      >
-        <Particles id="tsparticles" options={options} init={particlesInit} />
+    <Fade triggerOnce>
+      <div className="started-bg" id="cursourpoint">
+        <div
+          className="slide"
+          style={{backgroundImage: "url(" + particles + ")"}}
+        >
+          <Particles id="tsparticles" options={options} init={particlesInit} />
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 }
 
