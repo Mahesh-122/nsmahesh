@@ -13,7 +13,7 @@ const splashScreen = {
 // Summary And Greeting Section
 const greeting = {
   username: "N S Mahesh",
-  title: "Hi all, I'm N S Mahesh",
+  title: "Frontend Developer",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),

@@ -1,13 +1,11 @@
 import React, {useContext} from "react";
 import {Fade} from "react-awesome-reveal";
-import emoji from "react-easy-emoji";
 import profile from "../../assets/images/profilepicture.jpg";
 import "./Greeting.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
-
 import {greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import ToggleSwitch from "../../components/ToggleSwitch/ToggleSwitch";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -21,8 +19,11 @@ export default function Greeting() {
           <div className="st-image">
             <img src={profile} alt="" />
           </div>
-          <div className="st-title">N S Mahesh</div>
-          <div className="st-subtitle">Frontend Developer</div>
+          <a className="padding">
+            <ToggleSwitch />
+          </a>
+          <div className={isDark ? "dark-mode st-title" : "st-title"}>{greeting.username}</div>
+          <div className="st-subtitle">{greeting.title}</div>
           <SocialMedia />
           {/* <div className="st-soc">
 						<a target="blank" href="https://www.facebook.com/mahesh.naik.1614/" className="btn_animated">

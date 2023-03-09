@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "../discription/Discription.scss";
 import "../../assets/scss/Basic.scss";
-import "../../assets/scss/Layout.scss";
+// import "../../assets/scss/Layout.scss";
 import emoji from "react-easy-emoji";
 // import SoftwareSkill from "../../components/softwareDiscription/SoftwareSkill";
 import {DiscriptionSection} from "../../portfolio";
@@ -12,7 +12,7 @@ import StyleContext from "../../contexts/StyleContext";
 export default function Discription() {
   const {isDark} = useContext(StyleContext);
   if (!DiscriptionSection.display) {
-    return null;
+    return null; 
   }
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">

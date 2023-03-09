@@ -3,11 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 20vh;
+  color: rgb(42, 133, 182);
+  // background-color: black;
 }
 
 .splash-animation-container {
-  height: 30vh;
+  height: 0vh;
 }
 
 .splash-title-container {

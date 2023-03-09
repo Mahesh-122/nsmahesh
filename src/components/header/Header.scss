@@ -1,11 +1,4 @@
 @import "../../_globalColor";
-
-/*React-headroom*/
-.headroom-wrapper {
-  max-height: 100px;
-}
-
-
 .dark-menu {
   background-color: $darkBackground !important;
   color: $textColorDark;
@@ -21,9 +14,8 @@
 
 .header {
   background-color: $lightBackground1;
-  max-width: 100%;
-  padding: 15px 20px;
-  margin: 0px auto;
+  position: relative;
+  z-index: 101;
 }
 
 .header ul {
@@ -158,7 +150,7 @@
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 48.1em) and (max-width: 48em) {
   .header li {
     float: left;
   }
