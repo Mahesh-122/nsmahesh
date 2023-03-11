@@ -44,7 +44,7 @@ const Main = () => {
   };
 
   return (
-    <div className="page">
+    <div className="page" id="home-section">
       <div className={isDark ? "dark-mode" : null}>
         <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
           {isShowingSplashAnimation && splashScreen.enabled ? (
@@ -54,7 +54,6 @@ const Main = () => {
               <Particles />
               <Header />
               <div className={isDark ? "dark-menu container" : "container"}>
-              
                 <Greeting />
                 <Discription />
                 <WorkExperience />

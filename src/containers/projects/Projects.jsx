@@ -5,7 +5,9 @@ import catering from "../../assets/images/catering.png";
 import scraps from "../../assets/images/scraps.png";
 import bookmela from "../../assets/images/bookmela.png";
 import placeme from "../../assets/images/placeme.png";
+import crypto from "../../assets/images/crypto.png";
 import eventmatters from "../../assets/images/eventmatters.png";
+import "../../assets/scss/MagnificPopup.scss"
 
 export default function Projects() {
   const {isDark} = useContext(StyleContext);
@@ -24,28 +26,39 @@ export default function Projects() {
                 <div className="col col-m-12 col-t-6 col-d-4 box-item f-mockup animated">
                   <div className="image">
                     <a href="#popup-1" className="has-popup">
-                      <img src={eventmatters} />
+                      <img src={eventmatters} alt="eventmatters" />
                     </a>
                   </div>
-                  <div className="content-box">
+                  <div
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card content-box"
+                        : "content-box"
+                    }
+                  >
                     <div className="category">Mockups</div>
                     <a href="#popup-1" className="name has-popup">
-                      Tiny House
+                    Event Matters
                     </a>
-                    <p>Tiny House Project is a nonprofit organization...</p>
+                    <p>Event Matters Project is a platform...</p>
                   </div>
-                  <div id="popup-1" className="popup-box mfp-fade mfp-hide">
+                  <div
+                    id="popup-1"
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card popup-box mfp-fade mfp-hide"
+                        : "popup-box mfp-fade mfp-hide"
+                    }
+                  >
                     <div className="content">
                       <div className="image">
-                        {/* <img src="./img/eventmatters.png" alt=""> */}
+                        <img src={eventmatters} alt="eventmatters" />
                       </div>
                       <div className="desc">
                         <div className="category">Prototype</div>
-                        <h4>Tiny House</h4>
+                        <h4>Event Matters</h4>
                         <p>
-                          Tiny House Project is a nonprofit organization that
-                          provides shelter, housing and supportive services to
-                          adults experiencing chronic homelessness in India.
+                        Event Matters Project is a platform for concerts and events like marriage, corporate shows etc.
                         </p>
                         {/* <a href="#" className="btn btn_animated"><span className="circle">View Project</span></a>  */}
                       </div>
@@ -59,14 +72,27 @@ export default function Projects() {
                       <img src={bookmela} />
                     </a>
                   </div>
-                  <div className="content-box">
+                  <div
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card content-box"
+                        : "content-box"
+                    }
+                  >
                     <div className="category">Prototype</div>
                     <a href="#popup-2" className="name has-popup">
                       Bookmela
                     </a>
                     <p>Bookmela is a website which will allow you to...</p>
                   </div>
-                  <div id="popup-2" className="popup-box mfp-fade mfp-hide">
+                  <div
+                    id="popup-2"
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card popup-box mfp-fade mfp-hide"
+                        : "popup-box mfp-fade mfp-hide"
+                    }
+                  >
                     <div className="content">
                       <div className="image">
                         <img src={bookmela} />
@@ -89,7 +115,13 @@ export default function Projects() {
                       <img src={catering} />
                     </a>
                   </div>
-                  <div className="content-box">
+                  <div
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card content-box"
+                        : "content-box"
+                    }
+                  >
                     <div className="category">Prototype</div>
                     <a href="#popup-3" className="name has-popup">
                       Catering
@@ -99,7 +131,14 @@ export default function Projects() {
                       bulk...
                     </p>
                   </div>
-                  <div id="popup-3" className="popup-box mfp-fade mfp-hide">
+                  <div
+                    id="popup-3"
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card popup-box mfp-fade mfp-hide"
+                        : "popup-box mfp-fade mfp-hide"
+                    }
+                  >
                     <div className="content">
                       <div className="image">
                         <img src={catering} alt="" />
@@ -122,17 +161,30 @@ export default function Projects() {
                       <img src={scraps} alt="" />
                     </a>
                   </div>
-                  <div className="content-box">
+                  <div
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card content-box"
+                        : "content-box"
+                    }
+                  >
                     <div className="category">Prototype</div>
                     <a href="#popup-1" className="name has-popup">
                       Scraps
                     </a>
                     <p>This website allow you to sell you old product...</p>
                   </div>
-                  <div id="popup-4" className="popup-box mfp-fade mfp-hide">
+                  <div
+                    id="popup-4"
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card popup-box mfp-fade mfp-hide"
+                        : "popup-box mfp-fade mfp-hide"
+                    }
+                  >
                     <div className="content">
                       <div className="image">
-                        {/* <img src="./img/scraps.png" alt=""> */}
+                        <img src={scraps} alt="" />
                       </div>
                       <div className="desc">
                         <div className="category">Prototype</div>
@@ -149,20 +201,33 @@ export default function Projects() {
                 <div className="col col-m-12 col-t-6 col-d-4 box-item f-graphic animated">
                   <div className="image">
                     <a href="#popup-5" className="has-popup">
-                      <img src={placeme.png} alt="" />
+                      <img src={placeme} alt="" />
                     </a>
                   </div>
-                  <div className="content-box">
+                  <div
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card content-box"
+                        : "content-box"
+                    }
+                  >
                     <div className="category">Prototype</div>
                     <a href="#popup-2" className="name has-popup">
                       Placeme
                     </a>
                     <p>Placeme is designed for students seeking for a job...</p>
                   </div>
-                  <div id="popup-5" className="popup-box mfp-fade mfp-hide">
+                  <div
+                    id="popup-5"
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card popup-box mfp-fade mfp-hide"
+                        : "popup-box mfp-fade mfp-hide"
+                    }
+                  >
                     <div className="content">
                       <div className="image">
-                        {/* <img src="./img/placeme.png" alt=""> */}
+                        <img src={placeme} alt="" />
                       </div>
                       <div className="desc">
                         <div className="category">Prototype</div>
@@ -180,20 +245,33 @@ export default function Projects() {
                 <div className="col col-m-12 col-t-6 col-d-4 box-item f-mockup animated">
                   <div className="image">
                     <a href="#popup-6" className="has-popup">
-                      <img src="./img/crypto.png" alt="" />
+                      <img src={crypto} alt="" />
                     </a>
                   </div>
-                  <div className="content-box">
+                  <div
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card content-box"
+                        : "content-box"
+                    }
+                  >
                     <div className="category">Prototype</div>
                     <a href="#popup-3" className="name has-popup">
                       Crypto
                     </a>
                     <p>Crypto is a website which will provide information...</p>
                   </div>
-                  <div id="popup-6" className="popup-box mfp-fade mfp-hide">
+                  <div
+                    id="popup-6"
+                    className={
+                      isDark
+                        ? "dark-menu certificate-card popup-box mfp-fade mfp-hide"
+                        : "popup-box mfp-fade mfp-hide"
+                    }
+                  >
                     <div className="content">
                       <div className="image">
-                        {/* <img src="./img/crypto.png" alt=""> */}
+                        <img src={crypto} alt="" />
                       </div>
                       <div className="desc">
                         <div className="category">Prototype</div>
@@ -222,7 +300,7 @@ export default function Projects() {
                   </a>
                   <p>Ebuy is website where you can order...</p>
                 </div>
-                <div id="popup-7" className="popup-box mfp-fade mfp-hide">
+                <div id="popup-7" className={isDark?"dark-menu certificate-card popup-box mfp-fade mfp-hide" : "popup-box mfp-fade mfp-hide"}>
                   <div className="content">
                     <div className="image">
                       <img src="./img/ebay.png" alt="">

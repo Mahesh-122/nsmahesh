@@ -27,10 +27,10 @@ export default function Course() {
                     <i className="fa fa-check icon" aria-hidden="true"></i>
                   </div>
                   <div className="cd-timeline-content">
-                    <div className="content-box">
+                    <div className={isDark?"dark-menu certificate-card content-box" : "content-box"}>
                       <div className="date">2016-2017</div>
                       <div className="name">Pankaj Sir's Academy.</div>
-                      {/* <div className="category">Bangalore, Karnataka</div> */}
+                      <div className="category">Bangalore, Karnataka</div>
                       <p>
                         Pankaj Sir's Academy is pioneer Training Institute and
                         leaders for imparting HIGH VALUE Training course on

@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-// import "./Skills.scss";
+import "../skills/skills.scss";
 // import {skillsSection} from "../../portfolio";
 import {Fade} from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
@@ -10,7 +10,7 @@ export default function Skills() {
   //   return null;
   // }
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
+    <div className={isDark ? "dark-menu main" : "main"} id="skills">
       <div className="skills-main-div">
         <Fade bottom duration={1000}>
           <div className="wrapper">
@@ -18,7 +18,11 @@ export default function Skills() {
               <div className="title">Skills</div>
               <div className="row">
                 <div className="col col-m-12 col-t-6 col-d-6">
-                  <div className="content-box animated">
+                  <div className={
+                    isDark
+                      ? "dark-menu  animated project-card project-card-dark"
+                      : "project-card project-card-light  animated"
+                  }>
                     <div className="i_title">
                       <div className="icon">
                       <i className="fa fa-cog icon" aria-hidden="true"></i>
@@ -94,7 +98,11 @@ export default function Skills() {
                   </div>
                 </div>
                 <div className="col col-m-12 col-t-6 col-d-6">
-                  <div className="content-box animated">
+                  <div className={
+                    isDark
+                      ? "dark-menu  animated project-card project-card-dark"
+                      : "project-card project-card-light  animated"
+                  }>
                     <div className="i_title">
                       <div className="icon">
                       <i className="fa fa-user icon" aria-hidden="true"></i>

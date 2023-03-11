@@ -1,10 +1,11 @@
 import React, {useContext} from "react";
-import "../discription/Discription.scss";
+// import "../discription/Discription.scss";
 import "../../assets/scss/Basic.scss";
 // import "../../assets/scss/Layout.scss";
 import emoji from "react-easy-emoji";
 // import SoftwareSkill from "../../components/softwareDiscription/SoftwareSkill";
 import {DiscriptionSection} from "../../portfolio";
+import "../../assets/scss/card.scss"
 import {Fade} from "react-awesome-reveal"; // import codingPerson from "../../assets/lottie/codingPerson";
 // import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
@@ -19,7 +20,7 @@ export default function Discription() {
       <div className="wrapper">
         <Fade bottom duration={1000}>
           <div className="section about" id="about-section">
-            <div className="content-box d-flex">
+            <div className={isDark ? "dark-menu certificate-card content-box" : "certificate-card content-box"}>
               <div className="row ">
                 <div className="col col-m-12 col-t-5 col-d-5">
                   <div className="info-list">

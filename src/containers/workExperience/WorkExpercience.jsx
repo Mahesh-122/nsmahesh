@@ -4,10 +4,10 @@ import {workExperiences} from "../../portfolio";
 import {Fade} from "react-awesome-reveal";
 import "../../assets/scss/Basic.scss";
 import "../../assets/scss/Layout.scss";
-// import StyleContext from "../../contexts/StyleContext";
+import StyleContext from "../../contexts/StyleContext";
 
 export default function WorkExperience() {
-  // const {isDark} = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   if (workExperiences.display) {
     return (
       <div id="experience">
@@ -28,8 +28,8 @@ export default function WorkExperience() {
                     <i className="fa fa-check icon" aria-hidden="true"></i>
                     </div>
                     <div className="cd-timeline-content">
-                      <div className="content-box">
-                        <div className="date">2020-Present</div>
+                      <div className={isDark?"dark-menu certificate-card content-box" : "content-box"}>
+                        <div className="date">2021-Present</div>
                         <div className="name">Ganaka Labs pvt ltd</div>
                         <div className="category">Frontend Developer</div>
                         <ul
@@ -83,8 +83,8 @@ export default function WorkExperience() {
                     <i className="fa fa-check icon" aria-hidden="true"></i>
                     </div>
                     <div className="cd-timeline-content">
-                      <div className="content-box">
-                        <div className="date">2020-2021</div>
+                      <div className={isDark?"dark-menu certificate-card content-box" : "content-box"}>
+                        <div className="date">2019-2021</div>
                         <div className="name">Yetticate Solutions</div>
                         <div className="category">Frontend Developer</div>
                         <ul
