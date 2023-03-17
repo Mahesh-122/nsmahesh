@@ -48,7 +48,7 @@ const Main = () => {
           <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
             <>
               <Particles />
-              <Header />
+              {/* <Header /> */}
               <div className={isDark ? "dark-menu container" : "container"}>
                 <Greeting />
                 <Discription />
