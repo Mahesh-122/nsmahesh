@@ -1,15 +1,15 @@
+
 .splash-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 20vh;
+  min-height: 30vh;
   color: rgb(42, 133, 182);
-  // background-color: black;
 }
 
 .splash-animation-container {
-  height: 0vh;
+  height: 25vh;
 }
 
 .splash-title-container {

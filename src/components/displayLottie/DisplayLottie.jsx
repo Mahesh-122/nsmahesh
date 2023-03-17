@@ -1,20 +1,47 @@
-import React, {Component, Suspense} from "react";
-// import Lottie from "lottie-react";
-import Loading from "../../containers/loading/Loading";
+import React from "react";
+// import { css } from "@emotion/core";
 
-export default class DisplayLottie extends Component {
-  render() {
-    const animationData = this.props.animationData;
-    const defaultOptions = {
-      loop: true,
-      autoplay: true,
-      animationData: animationData
+import CircleLoader
+from "react-spinners/CircleLoader";
+// import './cofee.css';
+ 
+// Can be a string as well. Need to ensure each key-value pair ends with ;
+// const override = css`
+// margin: 0;
+// position: absolute;
+// top: 48%;
+// left: 50%;
+// -ms-transform: translate(-50%, -50%);
+// transform: translate(-50%, -50%);
+// `;
+ 
+class Spinner extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true
     };
-
+  }
+ 
+  render() {
     return (
-      <Suspense fallback={<Loading />}>
-        {/* <Lottie options={defaultOptions} isclicktopausedisabled={true} /> */}
-      </Suspense>
+      <React.Fragment>
+      <div className="sweet-loading">
+        <CircleLoader
+
+
+          // css={override}
+          size={120}
+          color={"blue"}
+         
+          loading={this.state.loading}
+          
+        />
+        
+      </div>
+      </React.Fragment>
     );
   }
 }
+
+export default Spinner;

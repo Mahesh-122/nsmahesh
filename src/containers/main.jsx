@@ -19,6 +19,7 @@ import Particles from "../components/particles/Particles";
 import Discription from "./discription/Discription";
 import WorkExperience from "./workExperience/WorkExpercience";
 import Course from "./course/Course";
+import Footer from "../components/footer/Footer";
 // import "./Main.scss";
 
 const Main = () => {
@@ -61,18 +62,7 @@ const Main = () => {
                 <Course />
                 <Education />
                 <Projects />
-                {/* <StackProgress />
-            
-           
-          
-            <StartupProject />
-            <Achievement />
-            <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast />
-            <Profile />
-            <Footer /> */}
+                <Footer />
                 <ScrollToTopButton />
               </div>
             </>

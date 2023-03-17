@@ -3,24 +3,32 @@ import React, {useContext} from "react";
 import "../../assets/scss/Basic.scss";
 // import "../../assets/scss/Layout.scss";
 import emoji from "react-easy-emoji";
+import Button from "../../components/button/Button";
 // import SoftwareSkill from "../../components/softwareDiscription/SoftwareSkill";
-import {DiscriptionSection} from "../../portfolio";
-import "../../assets/scss/card.scss"
+import {DiscriptionSection, greeting} from "../../portfolio";
+import "../../assets/scss/card.scss";
 import {Fade} from "react-awesome-reveal"; // import codingPerson from "../../assets/lottie/codingPerson";
 // import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Discription() {
   const {isDark} = useContext(StyleContext);
-  if (!DiscriptionSection.display) {
-    return null; 
+  if ((!DiscriptionSection.display, !greeting.displayGreeting)) {
+    return null;
   }
+
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
+    <div className={isDark ? "dark-mode main" : "main"} id="discription">
       <div className="wrapper">
         <Fade bottom duration={1000}>
           <div className="section about" id="about-section">
-            <div className={isDark ? "dark-menu certificate-card content-box" : "certificate-card content-box"}>
+            <div
+              className={
+                isDark
+                  ? "dark-menu certificate-card content-box"
+                  : "certificate-card content-box"
+              }
+            >
               <div className="row ">
                 <div className="col col-m-12 col-t-5 col-d-5">
                   <div className="info-list">
@@ -28,28 +36,42 @@ export default function Discription() {
                       <li>
                         <strong>
                           <span>Job:</span>
-                        </strong>{" "}
-                        Frontend Developer
+                        </strong>
+                        {greeting.title}
                       </li>
                       <li>
                         <strong>
                           <span>Address:</span>
                         </strong>{" "}
-                        Bangalore, Karnataka
+                        {greeting.address}
                       </li>
                       <li>
                         <strong>
                           <span>Phone:</span>
                         </strong>{" "}
-                        <a href="tel:9663054850">+91 9663054850</a>
+                        <a href="tel:9663054850">{greeting.mobile}</a>
                       </li>
                       <li>
                         <strong>
                           <span>E-mail:</span>
                         </strong>{" "}
                         <a href="mailto:maheshnaik122@gmail.com">
-                          maheshnaik122@gmail.com
+                         {greeting.email}
                         </a>
+                      </li>
+                      <li>
+                        <strong>
+                          <span>Resume</span>
+                        </strong>{" "}
+                        {/* <a  href={greeting.resumeLink}> */}
+                        {greeting.resumeLink && (
+                  <Button
+                    text="See my resume"
+                    newTab={true}
+                    href={greeting.resumeLink}
+                  />
+                )}
+                        {/* </a> */}
                       </li>
                     </ul>
                   </div>
@@ -57,61 +79,17 @@ export default function Discription() {
                 <div className="col col-m-12 col-t-7 col-d-7">
                   <div className="text-box">
                     <p>
-                      <strong>Hello! I’m N S Mahesh</strong>
+                      <strong>Hello! I’m {greeting.username}</strong>
                       <span className="wave-emoji">{emoji("👋")}</span>
                     </p>
-                    <p>
-                      Looking for a challenging career and be a part of
-                      progressive organization that gives a scope to enhance my
-                      knowledge and utilizing my skills towards the growth of
-                      the organization.
-                    </p>
-                    <p>
-                      I, N S Mahesh, hereby declare that the information
-                      contained herein is true and correct to the best of my
-                      knowledge and belief.
-                    </p>
+                    <p>{greeting.subTitle}</p>
+                    <p>{greeting.discribe}</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>  
-        </Fade>
-        {/* <Fade right duration={1000}>
-          <div className="skills-text-div">
-            <h1
-              className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-            >
-              {DiscriptionSection.title}{" "}
-            </h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode subTitle skills-text-subtitle"
-                  : "subTitle skills-text-subtitle"
-              }
-            >
-              {DiscriptionSection.subTitle}
-            </p>
-            <SoftwareSkill />
-            <div>
-              {DiscriptionSection.skills.map((skills, i) => {
-                return (
-                  <p
-                    key={i}
-                    className={
-                      isDark
-                        ? "dark-mode subTitle skills-text"
-                        : "subTitle skills-text"
-                    }
-                  >
-                    {skills}
-                  </p>
-                );
-              })}
-            </div>
           </div>
-        </Fade> */}
+        </Fade>
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/loading.json"; // Rename to your file name for custom animation
 
@@ -9,14 +8,23 @@ const splashScreen = {
   animation: splashAnimation,
   duration: 1000 // Set animation duration as per your animation
 };
+// Summary And Greeting Section
+
+const illustration = {
+  animated: true // Set to false to use static SVG
+};
 
 // Summary And Greeting Section
 const greeting = {
   username: "N S Mahesh",
   title: "Frontend Developer",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
+  address: "Bangalore, Karnataka",
+  mobile:"9663054850",
+  email:" maheshnaik122@gmail.com",
+  subTitle:
+    "A passionate Front-End Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.",
+  discribe:
+    "I, N S Mahesh, hereby declare that the information  contained herein is true and correct to the best of my knowledge and belief.",
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -24,13 +32,11 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  twitter: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
+  twitter: "https://twitter.com/mahinaik123",
+  linkedin: "https://www.linkedin.com/in/n-s-mahesh-a29550191/",
   gmail: "nsmahesh122@gmail.com",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  instagram: "https://www.facebook.com/saad.pasta7",
-  // medium: "https://medium.com/@saadpasta",
-  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  facebook: "https://www.facebook.com/mahesh.naik.1614/",
+  instagram: "https://www.instagram.com/n_s_mahesh/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -176,7 +182,7 @@ const educationInfo = {
 };
 
 export {
-  // illustration,
+  illustration,
   splashScreen,
   greeting,
   socialMediaLinks,
@@ -184,7 +190,7 @@ export {
   // skillsSection,
   // educationInfo,
   // techStack,
-  workExperiences,
+  workExperiences
   // openSource,
   // bigProjects,
   // achievementSection,
