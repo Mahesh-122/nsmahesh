@@ -2,15 +2,9 @@ import React, {useEffect, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
-// import StackProgress from "./skillProgress/skillProgress";
-// import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
-// import Blogs from "./blogs/Blogs";
-// import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
-import ScrollToTopButton from "./topButton/Top";
-// import Twitter from "./twitter-embed/twitter";
-// import Profile from "./profile/Profile";
+import ScrollToTopButton from "./topButton/Top"
 import SplashScreen from "./SplashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
@@ -20,7 +14,6 @@ import Discription from "./discription/Discription";
 import WorkExperience from "./workExperience/WorkExpercience";
 import Course from "./course/Course";
 import Footer from "../components/footer/Footer";
-// import "./Main.scss";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -43,14 +36,16 @@ const Main = () => {
   const changeTheme = () => {
     setIsDark(!isDark);
   };
+  
 
   return (
-    <div className="page" id="home-section">
-      <div className={isDark ? "dark-mode" : null}>
-        <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
-          {isShowingSplashAnimation && splashScreen.enabled ? (
-            <SplashScreen />
-          ) : (
+    <>
+    {isShowingSplashAnimation && splashScreen.enabled ? (
+      <SplashScreen />
+    ) : (
+      <div className="page" id="home-section">
+        <div className={isDark ? "dark-mode" : null}>
+          <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
             <>
               <Particles />
               <Header />
@@ -66,10 +61,11 @@ const Main = () => {
                 <ScrollToTopButton />
               </div>
             </>
-          )}
-        </StyleProvider>
+          </StyleProvider>
+        </div>
       </div>
-    </div>
+    )}
+  </>
   );
 };
 

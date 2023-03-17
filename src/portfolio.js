@@ -6,7 +6,7 @@ import splashAnimation from "./assets/lottie/loading.json"; // Rename to your fi
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 1000 // Set animation duration as per your animation
+  duration: 100000 // Set animation duration as per your animation
 };
 // Summary And Greeting Section
 
