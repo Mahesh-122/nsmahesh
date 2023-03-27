@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.0cc54aa4.css",
-    "main.js": "/static/js/main.29387b4a.js",
-    "static/js/787.1555a645.chunk.js": "/static/js/787.1555a645.chunk.js",
-    "static/media/particles.jpg": "/static/media/particles.9d29cdaa3e1895b4211f.jpg",
-    "static/media/eventmatters.png": "/static/media/eventmatters.95746ede6373bb6d60bd.png",
-    "static/media/scraps.png": "/static/media/scraps.44810bcbb872dcaedf71.png",
-    "static/media/catering.png": "/static/media/catering.b14916c61e4cd4a07ef1.png",
-    "static/media/placeme.png": "/static/media/placeme.7d5b1e9c19a6c41adfb1.png",
-    "static/media/profilepicture.jpg": "/static/media/profilepicture.5ac7f3da57f1cc20ecc8.jpg",
-    "static/media/bookmela.png": "/static/media/bookmela.3e9e472ccfc76d9c6324.png",
-    "static/media/crypto.png": "/static/media/crypto.718eea8bfe61a21de432.png",
-    "index.html": "/index.html",
-    "main.0cc54aa4.css.map": "/static/css/main.0cc54aa4.css.map",
-    "main.29387b4a.js.map": "/static/js/main.29387b4a.js.map",
-    "787.1555a645.chunk.js.map": "/static/js/787.1555a645.chunk.js.map"
+    "main.css": "/nsmahesh/static/css/main.0cc54aa4.css",
+    "main.js": "/nsmahesh/static/js/main.7b2ac93b.js",
+    "static/js/787.1555a645.chunk.js": "/nsmahesh/static/js/787.1555a645.chunk.js",
+    "static/media/particles.jpg": "/nsmahesh/static/media/particles.9d29cdaa3e1895b4211f.jpg",
+    "static/media/eventmatters.png": "/nsmahesh/static/media/eventmatters.95746ede6373bb6d60bd.png",
+    "static/media/scraps.png": "/nsmahesh/static/media/scraps.44810bcbb872dcaedf71.png",
+    "static/media/catering.png": "/nsmahesh/static/media/catering.b14916c61e4cd4a07ef1.png",
+    "static/media/placeme.png": "/nsmahesh/static/media/placeme.7d5b1e9c19a6c41adfb1.png",
+    "static/media/profilepicture.jpg": "/nsmahesh/static/media/profilepicture.5ac7f3da57f1cc20ecc8.jpg",
+    "static/media/bookmela.png": "/nsmahesh/static/media/bookmela.3e9e472ccfc76d9c6324.png",
+    "static/media/crypto.png": "/nsmahesh/static/media/crypto.718eea8bfe61a21de432.png",
+    "index.html": "/nsmahesh/index.html",
+    "main.0cc54aa4.css.map": "/nsmahesh/static/css/main.0cc54aa4.css.map",
+    "main.7b2ac93b.js.map": "/nsmahesh/static/js/main.7b2ac93b.js.map",
+    "787.1555a645.chunk.js.map": "/nsmahesh/static/js/787.1555a645.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0cc54aa4.css",
-    "static/js/main.29387b4a.js"
+    "static/js/main.7b2ac93b.js"
   ]
 }
