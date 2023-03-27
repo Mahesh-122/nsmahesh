@@ -19,14 +19,27 @@ function Header() {
   const ToggleSidebar = () => {
     isOpen === true ? setIsopen(false) : setIsopen(true);
   };
+  const [ink, setInk] = useState(null);
 
-  // const viewExperience = workExperiences.display;
-  // const viewOpenSource = openSource.display;
-  // const viewSkills = skillsSection.display;
-  // const viewAchievement = achievementSection.display;
-  // const viewBlog = blogSection.display;
-  // const viewTalks = talkSection.display;
-
+  function handleMouseEnter(e) {
+    const circle = e.currentTarget;
+    if (!circle.contains(ink)) {
+      circle.insertBefore(document.createElement('span'), circle.firstChild);
+      setInk(circle.firstChild);
+    }
+    ink.classList.remove('animate');
+    if (!ink.offsetHeight && !ink.offsetWidth) {
+      const diameter = Math.max(circle.offsetWidth, circle.offsetHeight);
+      ink.style.height = `${diameter}px`;
+      ink.style.width = `${diameter}px`;  
+    }
+    const x = e.pageX - circle.offsetLeft - ink.offsetWidth / 2;
+    const y = e.pageY - circle.offsetTop - ink.offsetHeight / 2;
+    ink.style.top = `${y}px`;
+    ink.style.left = `${x}px`;
+    ink.classList.add('animate');
+  }
+  
   return (
     <>
       <header>
@@ -34,7 +47,7 @@ function Header() {
           <ul className={isDark ? "dark-menu " : "menu"}>
             <li className="active">
               <a className="btn_animated" href="#home-section">
-                <span className="circle">
+                <span className="circle" onMouseEnter={handleMouseEnter}>
                   <span
                     className="ink animate"
                     style={{

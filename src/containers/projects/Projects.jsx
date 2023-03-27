@@ -1,5 +1,6 @@
 import React, {useContext} from "react";
 import {Fade} from "react-awesome-reveal";
+// import { MagnificPopup } from 'react-magnific-popup';
 import StyleContext from "../../contexts/StyleContext";
 import catering from "../../assets/images/catering.png";
 import scraps from "../../assets/images/scraps.png";
@@ -11,6 +12,28 @@ import "../../assets/scss/MagnificPopup.scss"
 
 export default function Projects() {
   const {isDark} = useContext(StyleContext);
+  // const [openModal, setOpenModal] = useState(false);
+  // function handlePopup() {
+  //   const popup = new MagnificPopup({
+  //     type: 'inline',
+  //     overflowY: 'auto',
+  //     closeBtnInside: true,
+  //     mainClass: 'mfp-fade',
+  //   });
+  //   popup.open();
+  // }
+  // document.querySelectorAll('.has-popup').forEach(function(el) {
+  //   el.addEventListener('click', function() {
+  //     var popup = new MagnificPopup({
+  //       type: 'inline',
+  //       overflowY: 'auto',
+  //       closeBtnInside: true,
+  //       mainClass: 'mfp-fade',
+  //     });
+  //     popup.open();
+  //   });
+  // });
+
   // if (!skillsSection.display) {
   //   return null;
   // }
@@ -64,12 +87,11 @@ export default function Projects() {
                     </a>
                     <p>Bookmela is a website which will allow you to...</p>
                   </div>
-                  <div
-                    id="popup-2"
+                  <div 
                     className={
                       isDark
-                        ? "dark-menu certificate-card popup-box mfp-fade mfp-hide"
-                        : "popup-box mfp-fade mfp-hide"
+                        ? "dark-menu certificate-card has-popup popup-box mfp-fade mfp-hide"
+                        : "popup-box has-popup mfp-fade mfp-hide"
                     }
                   >
                     <div className="content">
