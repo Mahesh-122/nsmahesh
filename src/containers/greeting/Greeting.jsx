@@ -5,7 +5,6 @@ import "./Greeting.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import ToggleSwitch from "../../components/ToggleSwitch/ToggleSwitch";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -17,12 +16,13 @@ export default function Greeting() {
       <div id="section">
         <div className="st-box">
           <div className="st-image">
-            <img src={profile} alt="" />
+            <a href="/">
+              <img src={profile} alt="" />
+            </a>
           </div>
-          <a className="padding">
-            <ToggleSwitch />
-          </a>
-          <div className={isDark ? "dark-mode st-title" : "st-title"}>{greeting.username}</div>
+          <div className={isDark ? "dark-mode st-title" : "st-title"}>
+            {greeting.username}
+          </div>
           <div className="st-subtitle">{greeting.title}</div>
           <SocialMedia />
         </div>

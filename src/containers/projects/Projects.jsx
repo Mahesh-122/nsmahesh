@@ -22,21 +22,6 @@ export default function Projects() {
   //   });
   //   popup.open();
   // }
-  // document.querySelectorAll('.has-popup').forEach(function(el) {
-  //   el.addEventListener('click', function() {
-  //     var popup = new MagnificPopup({
-  //       type: 'inline',
-  //       overflowY: 'auto',
-  //       closeBtnInside: true,
-  //       mainClass: 'mfp-fade',
-  //     });
-  //     popup.open();
-  //   });
-  // });
-
-  // if (!skillsSection.display) {
-  //   return null;
-  // }
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
